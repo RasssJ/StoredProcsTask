@@ -1,10 +1,3 @@
-# StoredProcsTask
-
-DEMO
-https://user-images.githubusercontent.com/82982361/143584426-9df44df2-3669-43da-b062-691d04b62edc.mp4
-
-
-
 CREATE TABLE Employee
 
 (
