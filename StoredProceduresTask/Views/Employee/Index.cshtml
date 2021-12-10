@@ -1,0 +1,60 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>CHOOSE PROCEDURE TO CALL</h1>
+<hr />
+
+<div class="mb-5">
+    <a class="btn btn-danger" asp-controller="Employee" asp-action="GetEmployees">GetEmployees</a>
+    <hr />
+
+    <a class="btn btn-danger" asp-controller="Employee" asp-action="GetEmployeesCount">GetEmployeesCount</a>
+    <hr />
+
+    <div style="display:block;">
+        <form asp-controller="Employee" asp-action="GetNameById">
+            <div>
+                <label for="id"></label>
+                <br />
+                <input type="number" name="id" placeholder="Id" />
+            </div>
+            <button class="btn btn-danger" type="submit">GetNameById</button>
+        </form>
+    </div>
+
+    <hr />
+
+    <div style="display:block;">
+        <form asp-controller="Employee" asp-action="GetEmployeesCountByGender">
+            <div>
+                <label for="Gender"></label>
+                <br />
+                <input type="text" name="Gender" placeholder="Gender" />
+            </div>
+            <button class="btn btn-danger" type="submit">GetEmployeesCountByGender</button>
+        </form>
+    </div>
+
+    <hr />
+
+    <div style="display:block;">
+        <form asp-controller="Employee" asp-action="GetEmployeesByGenderAndDepartmentId">
+            <div>
+                <label for="Gender"></label>
+                <br />
+                <input type="text" name="Gender" placeholder="Gender" />
+            </div>
+            <div>
+                <label for="DepartmentId"></label>
+                <br />
+                <input type="number" name="DepartmentId" placeholder="DepartmentId" />
+            </div>
+            <button class="btn btn-danger" type="submit">GetEmployeesByGenderAndDepartmentId</button>
+        </form>
+    </div>
+    <hr />
+
+</div>
